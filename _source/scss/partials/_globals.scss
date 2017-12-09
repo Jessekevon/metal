@@ -168,7 +168,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+
 
   &.converge {
     background-image: url(../img/converge.jpg);
@@ -239,20 +239,34 @@ section {
   }
 
   h2 {
-    font-size: 120px;
+    font-size: 60px;
+
+    @include MQ(S) {
+      font-size: 120px;
+    }
+
 
     &.smaller {
-      font-size: 80px;
+      font-size: 40px;
       line-height: 1;
       margin-bottom: 40px;
+
+      @include MQ(S) {
+        font-size: 80px;
+      }
     }
   }
 
   p {
-    font-size: 20px;
+    font-size: 14px;
     text-transform: uppercase;
     margin-top: 10px;
-    letter-spacing: 1.7px;
+    letter-spacing: 1px;
+
+    @include MQ(S) {
+      font-size: 20px;
+      letter-spacing: 1.7px;
+    }
   }
 
   .text-wrap {
