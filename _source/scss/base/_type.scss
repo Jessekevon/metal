@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: 'Bajern';
+    src: url('../fonts/Bajern-Regular.eot');
+    src: url('../fonts/Bajern-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bajern-Regular.woff') format('woff'),
+        url('../fonts/Bajern-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-primary: "Bajern", serif;
+$font-secondary: "Fira Sans", sans-serif;
+
+body {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  color: $color-white;
+  position: relative;
+  font-size: 8.0rem;
+
+  @include MQ(XS) {
+    font-size: 30vw;
+    top: -5.2vw;
+  }
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: 6.0rem;
+  color: $color-black;
+}
+
+h4 {
+  font-family: $font-primary;
+  font-size: 5.0rem;
+  color: $color-white;
+  position: relative;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: $font-secondary;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: $font-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-red;
+  }
+}
+
+ul {
+  list-style-type: none;
+}

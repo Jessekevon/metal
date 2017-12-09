@@ -1,0 +1,20 @@
+// Reset default browser styles using Normalize
+
+@import 		'base/normalize';
+
+// Set variables and reusable mixins
+
+@import 		'base/config',
+				'base/mixins';
+
+// Import typical layout styles
+
+@import 		'base/flexbox-grid',
+				'base/responsive',
+				'base/type';
+
+// Import Partials
+
+@import 		'partials/globals';
+				
+// Specific project styles, add any section specific sass modules here (Pages)
